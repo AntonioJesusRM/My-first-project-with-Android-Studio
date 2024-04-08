@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">MiPrimerProyecto</string>
+    <string name="text1">Pellentesque eu sapien eu erat aliquam sodales. Morbi vitae nunc sed massarhoncus pellentesque.
+        Morbi eros elit, congue et volutpat vel, commodo quis sem.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lectus erat, aliquet quis ligula nec, sollicitudin varius odio.
+        Praesent commodo mollis dui. Suspendisse potenti.</string>
+    <string name="text2">Nulla tincidunt neque nisl, eget congue orci ultricies vitae.
+        Aenean finibus risus et euismod facilisis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+        Aenean nec tristique purus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc eget turpis erat.
+        Donec efficitur pharetra ex eu condimentum. Phasellus feugiat et leo eget mattis. Nam sed dapibus leo, sed lobortis sapien.
+        Phasellus malesuada, sapien convallis luctus tincidunt, nisl risus pulvinar tortor, vitae ultrices nunc metus ut magna.</string>
+    <string name="text3">Praesent maximus arcu at elementum viverra. Praesent sollicitudin eros non enim posuere euismod.
+        Praesent in nisl efficitur, vestibulum lorem vel, dictum nisi.  </string>
+    <string name="text4">Nunc non nulla laoreet, ullamcorper metus non, suscipit risus. Aliquam porta accumsan consectetur.
+        Maecenas iaculis auctor nisl sit amet malesuada. Proin ultricies sagittis posuere. Aliquam efficitur dolor nisl, quis fermentum nisi venenatis vel.
+        Donec pulvinar scelerisque neque, in laoreet leo sollicitudin nec. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+        Nunc nec tortor a tortor scelerisque posuere. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+        Duis at quam vel lacus gravida scelerisque eu non velit. </string>
+    <string name="text5">Cras tincidunt justo ut facilisis commodo. Ut suscipit urna eu sollicitudin varius.</string>
+    <string name="imageDescription">Imagen de Qualentum</string>
+    <string name="change_text">Cambiar texto</string>
+</resources>
