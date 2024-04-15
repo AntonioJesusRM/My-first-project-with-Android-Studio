@@ -2,9 +2,11 @@ package com.example.miprimerproyecto
 
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import kotlin.random.Random
@@ -42,9 +44,31 @@ class MainActivity : AppCompatActivity() {
                 randomTextId = Random.nextInt(5) + 1
             changeText(textRight,randomTextId)
         }
-
+        moveImg()
     }
 
+    private fun moveImg()
+    {
+        val textRight:TextView = findViewById(R.id.textRight)
+        val textLeft:TextView = findViewById(R.id.textLeft)
+        val img:ImageView = findViewById(R.id.image)
+
+        val leftTextWidth = textLeft.paint.measureText(textLeft.text.toString())
+        val rightTextWidth = textRight.paint.measureText(textRight.text.toString())
+        if (leftTextWidth > rightTextWidth) {
+            img.post {
+                val params = img.layoutParams as ConstraintLayout.LayoutParams
+                params.topToBottom  = textLeft.id
+                img.layoutParams = params
+            }
+        } else {
+            img.post {
+                val params = img.layoutParams as ConstraintLayout.LayoutParams
+                params.topToBottom  = textRight.id
+                img.layoutParams = params
+            }
+        }
+    }
     private fun getNumberResource(text: String): Int? {
         val fields = R.string::class.java.fields
         var number: Int? = null

@@ -30,13 +30,6 @@
         app:layout_constraintStart_toEndOf="@+id/textLeft"
         app:layout_constraintTop_toTopOf="@+id/textLeft" />
 
-    <androidx.constraintlayout.widget.Barrier
-        android:id="@+id/barrier"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:barrierDirection="start"
-        app:constraint_referenced_ids="textLeft,textRight" />
-
     <ImageView
         android:id="@+id/image"
         android:layout_width="0dp"
@@ -47,7 +40,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/barrier" />
+        app:layout_constraintTop_toBottomOf="@id/textRight" />
 
     <Button
         android:id="@+id/buttonChangeText"
@@ -56,7 +49,6 @@
         android:text="@string/change_text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/image" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
